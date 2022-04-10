@@ -3,10 +3,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
   let heroImage = document.getElementById('heroImage')
   let btn = document.getElementById('btn')
   let bestial = document.getElementById('bestial-container')
-  let name
-  let path
-  let bestiario = []
-  let hero = []
+
 
   //criando dinamicamente
   let create = ()=> {
@@ -44,7 +41,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     btnLoad.addEventListener('click',
       ()=> {
         inputFile.click()
-        read(bestaImg, inputFile, btnLoad, bestiario)
+        read(bestaImg, inputFile, btnLoad)
       })
 
 
@@ -103,12 +100,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
   btn.addEventListener('click',
     ()=> {
       heroFileImage.click()
-      read(heroImage, heroFileImage, btn, hero)
+      read(heroImage, heroFileImage, btn)
     })
 
 
-  function read(img, input, btn,
-    data,
+  function read(img, input, btn
   ) {
     img.style.display = 'initial'
     input.addEventListener('change',
@@ -126,15 +122,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
   }
 
 
-  let btnSave = document.getElementById('save')
+  
   let arr = []
 
-  btnSave.addEventListener('click',
-    ()=> {
-      alert('ficha salva')
-      
-      console.log(document.getElementsByClassName('bestaImg'))
-    })
+ 
 
   let addBesta = document.getElementById('addBesta')
   addBesta.addEventListener('click',
