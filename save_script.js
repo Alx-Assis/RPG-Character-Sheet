@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',()=>{
 let heroName=document.getElementById('heroName')
 let heroImage=document.getElementById('heroImage')
-let heroClass=document.getElementById('heroClasse')
+let heroClasse=document.getElementById('heroClasse')
 
 let hero=JSON.parse(localStorage.getItem('hero'))||[]
 
@@ -15,9 +15,9 @@ hero.heroC=heroClass.value
 localStorage.setItem('hero',JSON.stringify(hero))
 alert("Ficha Salva com sucesso")
 })
-
-heroClasse.value=hero.heroC
-heroImage.src=hero.heroI
 heroName.value=hero.heroN
+
+heroImage.src=hero.heroI
+heroClasse.value=hero.heroC
 
 })
