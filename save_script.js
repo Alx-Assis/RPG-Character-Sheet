@@ -9,7 +9,7 @@ let btn=document.getElementById('save')
 btn.addEventListener('click',(e)=>{
 hero.heroN=heroName.value
 hero.heroI=heroImage.src
-hero.heroC=heroClasse.value
+hero.heroC=heroClass.value
 
 
 localStorage.setItem('hero',JSON.stringify(hero))
