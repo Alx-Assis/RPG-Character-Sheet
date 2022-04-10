@@ -18,7 +18,7 @@ hero.heroC=heroClasse.value
 console.table(hero)
 
 localStorage.setItem('hero',JSON.stringify(hero))
-Alert("Ficha Salva com sucesso")
+alert("Ficha Salva com sucesso")
 })
 
 heroClasse.value=hero.heroC
