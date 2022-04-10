@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded',await ()=>{
 let heroName=document.getElementById('heroName')
 let heroImage=document.getElementById('heroImage')
 let heroClasse=document.getElementById('heroClasse')
