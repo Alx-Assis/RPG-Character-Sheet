@@ -17,7 +17,6 @@ localStorage.setItem('hero',JSON.stringify(hero))
 alert("Ficha Salva com sucesso")
 })
 heroName.value=hero.heroN
-
 heroImage.src=hero.heroI
 heroClasse.value=hero.heroC
 
