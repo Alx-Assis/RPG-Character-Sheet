@@ -4,7 +4,9 @@ let heroImage=document.getElementById('heroImage')
 let heroClasse=document.getElementById('heroClasse')
 
 
-let hero=JSON.parse(localStorage.getItem('hero'))||[]
+let hero=JSON.parse(localStorage.getItem('hero'))||{}
+
+
 
 let btn=document.getElementById('save')
 btn.addEventListener('click',()=>{
