@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', ()=> {
     inputName.setAttribute('class', 'nameMoster')
     inputName.setAttribute('type', 'text')
     inputName.setAttribute('id', 'inputName')
-    inputName.onchange = ()=> {
-
+    inputName.onchange = (e)=> {
+    inputName.value=e.target.value
     }
     let bestaImg = document.createElement('img')
     bestaImg.setAttribute('class', 'bestaImg')
     bestaImg.addEventListener('click', ()=> {
-
+alue
       let opt = confirm("DESEJA TROCAR A INAGEM?")
       
       if (opt) {
